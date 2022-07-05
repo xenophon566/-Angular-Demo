@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app.routing.module";
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NbThemeModule } from "@nebular/theme";
 import { NEBULAR_ROOT, NEBULAR_ALL } from "./_define/nebular/nebular.module";
@@ -28,6 +29,7 @@ const firebaseConfig = {
         AppRoutingModule,
         BrowserModule,
         BrowserAnimationsModule,
+        HttpClientModule,
         FormsModule,
         ReactiveFormsModule,
         MatNativeDateModule,
