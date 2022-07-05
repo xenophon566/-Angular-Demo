@@ -8,7 +8,7 @@ import { DemoCaseComponent } from "./demo/demo.component";
         RouterModule.forRoot([
             { path: "home", component: HomeComponent },
             { path: "demo", component: DemoCaseComponent },
-            { path: "", component: DemoCaseComponent },
+            { path: "", component: HomeComponent },
             { path: "**", redirectTo: "home" },
         ]),
     ],
