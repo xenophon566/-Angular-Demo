@@ -1,0 +1,64 @@
+<nb-card>
+    <nb-card-header>Firebase</nb-card-header>
+    <nb-card-body>
+        <div>
+            <label for="key" class="form-label">Key</label>
+            <div class="input-group mb-3">
+                <input class="form-control" type="text" [(ngModel)]="key" />
+            </div>
+            <label for="value" class="form-label">Value</label>
+            <div class="input-group mb-3">
+                <input class="form-control" type="text" [(ngModel)]="value" />
+            </div>
+            <div class="input-group mb-3">
+                <button nbButton outline status="primary" (click)="setMessages(key, value)">Create</button>
+                <button nbButton status="danger" (click)="removeMessage(key)">Delete</button>
+            </div>
+        </div>
+        <hr />
+        <div *ngFor="let message of messages">
+            {{ message }}
+        </div>
+    </nb-card-body>
+</nb-card>
+
+<nb-card>
+    <nb-card-header> Nebular </nb-card-header>
+    <nb-card-body>
+        <div>
+            <button nbButton outline status="primary">Primary</button>
+            <button nbButton outline status="success">Success</button>
+            <button nbButton outline status="info">Info</button>
+            <button nbButton hero status="warning">Warning</button>
+            <button nbButton hero status="danger">Danger</button>
+        </div>
+    </nb-card-body>
+</nb-card>
+
+<nb-card>
+    <nb-card-header> Bootstrap </nb-card-header>
+    <nb-card-body>
+        <div>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+    </nb-card-body>
+</nb-card>
+
+<nb-card>
+    <nb-card-header> Material </nb-card-header>
+    <nb-card-body>
+        <div class="example-button-row">
+            <button mat-raised-button>Basic</button>
+            <button mat-raised-button color="primary">Primary</button>
+            <button mat-raised-button color="accent">Accent</button>
+            <button mat-raised-button color="warn">Warn</button>
+            <button mat-raised-button disabled>Disabled</button>
+        </div>
+    </nb-card-body>
+</nb-card>
